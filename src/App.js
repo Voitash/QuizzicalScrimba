@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="App">
       {startScreen && <Start handleClick={startGame} />}
-      <main>{!startScreen && <Quiz questions={questions} />}</main>
+      {!startScreen && <Quiz questions={questions} />}
     </div>
   );
 }

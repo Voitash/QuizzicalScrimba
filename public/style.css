@@ -6,29 +6,28 @@
 
 body {
   font-family: "Karla", sans-serif;
-  color: #293264;
-  background-color: #f5f7fb;
   display: grid;
   place-items: center;
-}
-
-main {
-  max-width: 800px;
-  padding: 50px 50px;
-  text-align: center;
+  background: url(downBlob.png) no-repeat bottom left, url(upBlob.png) no-repeat top right, #F5F7FB;
 }
 
 .container-start {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f5f7fb;
+}
+
+.quiz-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 15px;
+  text-align: center;
 }
 
 .bold {
@@ -37,14 +36,14 @@ main {
 
 button {
   padding: 10px;
-  width: 193px;
-  height: 52px;
+  width: 120px;
+  height: 35px;
   border-radius: 15px;
   border: none;
   color: #f5f7fb;
   background-color: #4d5b9e;
   font-family: Inter, sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   cursor: pointer;
   margin: 15px;
 }
