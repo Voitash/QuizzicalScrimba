@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  color: #293264;
+  background-color: #f5f7fb;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  max-width: 800px;
+  padding: 50px 50px;
+  text-align: center;
+}
+
+.container-start {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f7fb;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+button {
+  padding: 10px;
+  width: 193px;
+  height: 52px;
+  border-radius: 15px;
+  border: none;
+  color: #f5f7fb;
+  background-color: #4d5b9e;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 15px;
+}
+
+button:disabled {
+  background-color: #b4bef4;
+}
+
+button:hover,
+input:hover {
+  transform: scale(1.07);
+  transition: all 0.2s;
+}
+
+.title-element {
+  margin-bottom: 15px;
+}
+
+input:before {
+  content: attr(label);
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+input {
+  width: auto;
+  height: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px #293264;
+  border-radius: 10px;
+  padding: 4px 8px;
+  font-family: "Karla", sans-serif;
+  font-size: 12px;
+  color: #293264;
+  margin: 6px;
+}
+
+input:disabled:not(.green) {
+  transition: none;
+  transform: scale(1);
+  cursor: default;
+  opacity: 0.5;
+}
+
+.quiz-answers {
+  display: inline-flex;
+}
+
+.quiz-question {
+  font-size: 16px;
+}
+
+hr {
+  margin: 20px auto;
+  border: 0.5px solid #dbdef0;
+}
+
+.green {
+  background-color: #94d7a2;
+  border: none;
+}
+
+.red {
+  background-color: #f8bcbc;
+  border: none;
+  color: #4d5b9e;
+}
+
+.blue {
+  background-color: #d6dbf5;
+  border: none;
+}
+
+.summary {
+  display: inline-flex;
+  align-items: center;
+}
